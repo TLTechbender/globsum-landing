@@ -78,7 +78,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-999 flex items-center justify-between px-6 py-4 md:px-12 bg-white shadow-md text-gray-900">
+      <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 py-4 md:px-12 bg-white shadow-md text-gray-900">
         {/* Logo - Left */}
         <Link
           href="#home"
@@ -179,7 +179,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Panel */}
       <div
-        className={`fixed bottom-0 left-0 right-0 z-40 bg-white rounded-t-3xl shadow-2xl transition-transform duration-500 ease-out md:hidden ${
+        className={`fixed bottom-0 left-0 right-0 z-60 bg-white rounded-t-3xl shadow-2xl transition-transform duration-500 ease-out md:hidden ${
           mobileMenuOpen ? "translate-y-0" : "translate-y-full"
         }`}>
         <div className="px-8 py-10">
