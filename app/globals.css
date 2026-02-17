@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --accent: #F3525A; /* Base color without alpha for flexibility */
+  --accent-alpha: #F3525AAB; /* Provided color with alpha */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-alpha: var(--accent-alpha);
+  
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-66.666%); }
+}
+
+.slide-track {
+  animation: slide 55s linear infinite;
+}
+
+.slide-track {
+  width: 300vw;  /* n (number of images) × 100vw each */
+  animation: slide 55s linear infinite;
+}
